@@ -13,10 +13,10 @@ Tela de Login - Desktop
 Tela de Cadastro - Desktop
 ![Print Desktop SignUp](https://i.imgur.com/znWwtWC.png)
 
-Tela de Login - Celular
+Tela de Login - Celular <br />
 ![Print Phone SignIn](https://i.imgur.com/z5y9izf.png)
 
-Tela de Cadastro - Celular
+Tela de Cadastro - Celular <br />
 ![Print Phone SignUp](https://i.imgur.com/gamSDWH.png)
 
 ### 🎲 Rodando a aplicação
