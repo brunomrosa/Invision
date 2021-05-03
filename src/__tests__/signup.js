@@ -90,7 +90,7 @@ test('user cannot create account with a short password', async () => {
   expect(alert).toHaveTextContent('A senha não pode ter menos de 6 caracteres');
 });
 
-test('user should see sucess alert after creat account', async () => {
+test('user should see sucess alert after create account', async () => {
   const history = createMemoryHistory();
   render(
     <AuthProvider>
