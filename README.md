@@ -36,6 +36,6 @@ $ npm run start || yarn start
 
 # O servidor inciará na porta:3333 - acesse <http://localhost:3333>
 
-# Para usar os testes utilize
+# Para rodar os testes utilize
 $ npm run test || yarn test
 ```
