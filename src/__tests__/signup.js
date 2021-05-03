@@ -72,6 +72,24 @@ test('user cannot create account with empty password', async () => {
   expect(alert).toHaveTextContent('Senha não pode ser vazia');
 });
 
+test('user cannot create account with a short password', async () => {
+  const history = createMemoryHistory();
+  render(
+    <Router history={history}>
+      <ToastContainer />
+      <SignUp />
+    </Router>,
+  );
+  userEvent.type(screen.getByRole('name'), 'user dev');
+  userEvent.type(screen.getByRole('email'), 'user@gmail.com');
+  userEvent.type(screen.getByRole('password'), '12345');
+
+  userEvent.click(screen.getByRole('signup'));
+  const alert = await screen.findByRole('alert');
+
+  expect(alert).toHaveTextContent('A senha não pode ter menos de 6 caracteres');
+});
+
 test('user should see sucess alert after creat account', async () => {
   const history = createMemoryHistory();
   render(

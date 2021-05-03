@@ -71,7 +71,7 @@ test('user cannot try to login with empty password', async () => {
   expect(alert).toHaveTextContent('Senha não pode ser vazia');
 });
 
-test('user cannot try to login with password too short', async () => {
+test('user cannot try to login with a short password', async () => {
   const history = createMemoryHistory();
   render(
     <Router history={history}>
